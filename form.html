@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>daftarkan alumni</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      /* CSS untuk navbar */
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+ 
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+/* CSS untuk form */
+form {
+    margin: 20px;
+  }
+
+  label,
+  input,
+  select,
+  textarea {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+
+  label {
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 250px;
+  }
+  .radio{
+    width: 20px;
+  }
+</style>
+</head>
+<body>
+  <fieldset>
+    <legend><b>daftarkan alumni</b></legend>
+
+  
+
+  <h1>Daftarkan alumni</h1>
+  <form>
+    <div>
+    <label for="program_studi">program studi:</label>
+    <select id="program_studi" name="program_studi">
+     <option value="teknik_informatika">teknik informatika</option>
+</select>
+</div>
+    <div>
+    <label for="tahun masuk">tahun masuk:</label>
+    <input type="text" id="tahun masuk" name="tahun masuk" required /><br />
+    </div>
+    <div>
+    <label for="tahun masuk">tahun lulus:</label>
+    <input type="text" id="tahun lulus" name="tahun lulus" required /><br />
+    </div>
+    <label for="alamat linked">alamat linked:</label>
+    <input
+  
+    /><br />
+
+    <label for="pekerjaan">pekerjaan:</label>
+    <textarea id="pekerjaan" name="pekerjaan" rows="5" required></textarea><br />
+
+    <label for="alamat kantor">alamat kantor</label>
+    <textarea id="alamat kantor" name="alamat kantor" rows="5" required></textarea><br />
+
+    <label for="pengurus alumni">pengurus alumni</label>
+
+    <input class="radio" type="radio" name="ya"> ya
+
+    <input class="radio" type="radio" name="tidak"> tidak
+
+    
+    <button type="submit" >Simpan</button>
+    <button type="reset">Batal</button>
+  </form>
+  </fieldset>
+</body>
+</html>
